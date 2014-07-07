@@ -10,10 +10,19 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !u::Send {Home}
 !o::Send {End}
 !p::Send {End}
+!m::Send {Del}
+!x::Send ^x
+!c::Send ^c
+!v::Send ^v
+!z::Send ^z
+!f::Send ^f
+!a::Send ^a
+!d::Send {F3}
+!r::Send ^+G
+Alt::return
 
-; this was intended to just push the up button if alt was pressed and released, but instead
-; the way this works is that if shif exclamation is pressed, the up is registered, so to 
-; AHK this looks like an exclamation not alt like all of the other lines of code do. !::Send +{Up}
+;** the below block handles the shift selection of text **
+;** for example, holding shift and using the directional arrow keys
 !+i::Send +{Up}
 !+k::Send +{Down}
 !+j::Send +{Left}
@@ -21,16 +30,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !+u::Send +{Home}
 !+o::Send +{End}
 !+m::Send {Del}
-
-!x::Send ^x
-!c::Send ^c
-!v::Send ^v
-!z::Send ^z
-!f::Send ^f
-!a::Send ^a
-
  
-;Lwin::return
+;Lwin::return 
 ;Rwin::return
 
 !s::
