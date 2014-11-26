@@ -9,16 +9,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !l::Send {Right}
 !u::Send {Home}
 !o::Send {End}
-!p::Send {End}
 !m::Send {Del}
 !x::Send ^x
 !c::Send ^c
 !v::Send ^v
 !z::Send ^z
+!y::Send ^y
 !f::Send ^f
 !a::Send ^a
-!d::Send {F3}
-!r::Send ^+G
+!Space::Send {Space}
 Alt::return
 
 ;** the below block handles the shift selection of text **
