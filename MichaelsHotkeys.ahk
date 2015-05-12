@@ -3,13 +3,15 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-!i::Send {Up}
-!k::Send {Down}
-!j::Send {Left}
+!h::Send {Left}
+!j::Send {Down}
+!k::Send {Up}
 !l::Send {Right}
 !u::Send {Home}
 !o::Send {End}
 !m::Send {Del}
+!p::Send {PgUp}
+!`;::Send {PgDn}
 !x::Send ^x
 !c::Send ^c
 !v::Send ^v
@@ -22,9 +24,9 @@ Alt::return
 
 ;** the below block handles the shift selection of text **
 ;** for example, holding shift and using the directional arrow keys
-!+i::Send +{Up}
-!+k::Send +{Down}
-!+j::Send +{Left}
+!+h::Send +{Left}
+!+j::Send +{Down}
+!+k::Send +{Up}
 !+l::Send +{Right}
 !+u::Send +{Home}
 !+o::Send +{End}
